@@ -90,7 +90,7 @@ if __name__ == "__main__":
     password = input()
 
     options = Options()
-    # options.add_argument("--headless")
+    options.add_argument("--headless")
     driver = webdriver.Firefox(options=options)
 
     if login(driver, email, password):
